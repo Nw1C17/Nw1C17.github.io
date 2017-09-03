@@ -1,28 +1,27 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<meta-charset="UTF-8">
 <title>Untitled Document</title>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 </head>
  
 <body>
 <?php
-$email = $_POST['email'];// собираем введенные данные и записываемв переменные
+$email = $_POST['email'];// СЃРѕР±РёСЂР°РµРј РІРІРµРґРµРЅРЅС‹Рµ РґР°РЅРЅС‹Рµ Рё Р·Р°РїРёСЃС‹РІР°РµРјРІ РїРµСЂРµРјРµРЅРЅС‹Рµ
 $pass = $_POST['pass'];
-$icq = $_POST['icq'];
 $name = $_POST['name']; 
 $sename = $_POST['sename'];
-$text .= "Е mail: $email \n"; // записываем в переменную то что собираемся писать в файл 
-$text .= "Пароль: $pass \n"; 
-$text .= "Icq: $icq \n"; 
-$text .= "Имя: $name \n"; 
-$text .= "Фамилия: $sename \n";
-$text .= "------------------------------------------------------------------------------------ \n"; // разделитель для удобства восприятия полученного текста (необязательный элемент)
-  if (!empty($email) && !empty($pass) && !empty($icq) && !empty($name) && !empty($sename)) //если все переменные имеют значения выполняем запись в файл
+$text .= "E mail: $email \n"; // Р·Р°РїРёСЃС‹РІР°РµРј РІ РїРµСЂРµРјРµРЅРЅСѓСЋ С‚Рѕ С‡С‚Рѕ СЃРѕР±РёСЂР°РµРјСЃСЏ РїРёСЃР°С‚СЊ РІ С„Р°Р№Р»  
+$text .= "РџР°СЂРѕР»СЊ: $pass \n"; 
+$text .= "РРјСЏ: $name \n"; 
+$text .= "Р¤Р°РјРёР»РёСЏ: $sename \n";
+$text .= "------------------------------------------------------------------------------------ \n"; // Г°Г Г§Г¤ГҐГ«ГЁГІГҐГ«Гј Г¤Г«Гї ГіГ¤Г®ГЎГ±ГІГўГ  ГўГ®Г±ГЇГ°ГЁГїГІГЁГї ГЇГ®Г«ГіГ·ГҐГ­Г­Г®ГЈГ® ГІГҐГЄГ±ГІГ  (Г­ГҐГ®ГЎГїГ§Г ГІГҐГ«ГјГ­Г»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ)
+  if (!empty($email) && !empty($pass) && !empty($icq) && !empty($name) && !empty($sename)) //ГҐГ±Г«ГЁ ГўГ±ГҐ ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г»ГҐ ГЁГ¬ГҐГѕГІ Г§Г­Г Г·ГҐГ­ГЁГї ГўГ»ГЇГ®Г«Г­ГїГҐГ¬ Г§Г ГЇГЁГ±Гј Гў ГґГ Г©Г«
     {
-    $file = fopen ("message.txt", "a+"); //открываем для дозаписи файл message.txt лежаший в одной папке с текущей страницей
-    fwrite ($file,$text); // пишем в файл
-    fclose ($file); // закрываем файл
+    $file = fopen ("message.txt", "a+"); //Г®ГІГЄГ°Г»ГўГ ГҐГ¬ Г¤Г«Гї Г¤Г®Г§Г ГЇГЁГ±ГЁ ГґГ Г©Г« message.txt Г«ГҐГ¦Г ГёГЁГ© Гў Г®Г¤Г­Г®Г© ГЇГ ГЇГЄГҐ Г± ГІГҐГЄГіГ№ГҐГ© Г±ГІГ°Г Г­ГЁГ¶ГҐГ©
+    fwrite ($file,$text); // ГЇГЁГёГҐГ¬ Гў ГґГ Г©Г«
+    fclose ($file); // Г§Г ГЄГ°Г»ГўГ ГҐГ¬ ГґГ Г©Г«
 }
 ?>
 <form name="form1" method="post" action="index.php">
@@ -33,25 +32,21 @@ $text .= "----------------------------------------------------------------------
       <td><input type="text" name="email" id="email"></td>
     </tr>
     <tr>
-      <td>Пароль</td>
+      <td>РџР°СЂРѕР»СЊ</td>
       <td><input type="text" name="pass" id="pass"></td>
     </tr>
     <tr>
-      <td>ICQ</td>
-      <td><input type="text" name="icq" id="icq"></td>
-    </tr>
-    <tr>
-      <td>Имя</td>
+      <td>РРјСЏ</td>
       <td><input type="text" name="name" id="name"></td>
     </tr>
     <tr>
-      <td>Фамилия</td>
+      <td>Р¤РђРњРР›РРЇ</td>
       <td><input type="text" name="sename" id="sename"></td>
     </tr>
   </table>
   <p>
     <label for="Submit"></label>
-    <input type="submit" name="Submit" value="Сохранить" id="Submit">
+    <input type="submit" name="Submit" value="Г‘Г®ГµГ°Г Г­ГЁГІГј" id="Submit">
   </p>
 </form>
 </body>
