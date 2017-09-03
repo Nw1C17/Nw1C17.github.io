@@ -1,14 +1,18 @@
 <meta-charset="UTF-8">
-  <div id="conteiner">
-    <form action="" id="reg" method="GET">
-      <p><label>Имя<input type="text" name="name" pattern="^[A-Za-zА-Яа-яЁё]+$" required><span></span></label></p>
-      <p><label>Фамилия<input type="text" name="soname" pattern="^[A-Za-zА-Яа-яЁё]+$" required><span></span></label></p>
-      <p><label>Город<input type="text" name="city" pattern="^[A-Za-zА-Яа-яЁё]+$" required><span></span></label></p><br />
-      <p><label>Эл. почта<input type="email" name="email" required><span></span></label></p>
-      <p><label>Пароль<input type="password" name="password" required><span></span></label></p>
-      <p><label>Повторите<input type="password" name="confirm_password" required><span></span></label></p><br />
-      <p>Введите число с картинки</p>
-      <p><label><img src="https://lh3.googleusercontent.com/jhuLVrIVlVcYBZxFvo8ZTCM7Iz2ZYF0gU1O5ktaJmw=w452-h207-p-no"/><input type="text" name="capcha" pattern="4s4fz" required><span></span></label></p>
-      <feildset><button type="submit" form="reg" name="submit" value="submit"></button></feildset>
-    </form>
-</div>
+   <title>Пример HTML формы</title>
+</head>
+<body>
+<form action="http://ab-w.net/comments.php" method="post" name="commentform" id="commentform">
+<p><input type="text" name="author" id="author" value="" size="25" />
+<small> Имя</small>
+</p>
+<p><input type="text" name="email" id="email" value="" size="25" />
+<small> Mail</small>
+</p>
+<p><textarea name="comment" id="comment" cols="48" rows="8"> </textarea>
+</p>
+<p><input name="submit" type="submit" id="submit" value="Отправить" />
+</p>
+</form>
+</body>
+</html>
