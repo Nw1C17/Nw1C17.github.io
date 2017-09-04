@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Untitled Document</title>
+<meta-charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 </head>
  
@@ -18,7 +19,7 @@ $text .= "Icq: $icq \n";
 $text .= "Имя: $name \n"; 
 $text .= "Фамилия: $sename \n";
 $text .= "------------------------------------------------------------------------------------ \n"; // разделитель для удобства восприятия полученного текста (необязательный элемент)
-  if (!empty($email) && !empty($pass) && !empty($icq) && !empty($name) && !empty($sename)) //если все переменные имеют значения выполняем запись в файл
+  if (!empty($email) !empty($pass) !empty($icq) !empty($name) !empty($sename)) //если все переменные имеют значения выполняем запись в файл
     {
     $file = fopen ("message.txt", "a+"); //открываем для дозаписи файл message.txt лежаший в одной папке с текущей страницей
     fwrite ($file,$text); // пишем в файл
