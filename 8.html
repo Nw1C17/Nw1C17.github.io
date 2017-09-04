@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="index.html">
+  </head>
+  <body>
+      
+      <form>
+        <section class="container one">
+          <p><label for="user_name">Имя</label>
+            <input type="text" name="user_name" pattern="^[А-Яа-яЁё\s]+$"><span></span></p>
+          
+          <p><label for="user_surname">Фамилия</label>
+            <input type="text" name="user_surname" pattern="^[А-Яа-яЁё\s]+$"><span></span></p>
+          
+          <p><label for="city">Город</label>
+            <input type="text" name="city" pattern="^[А-Яа-яЁё\s]+$"><span></span></p>
+          
+          <p><label for="email">Эл. почта</label>
+            <input type="email" name="email"><span></span></p>
+          
+          <p><label for="password">Пароль</label>
+            <input type="password" name="password"><span></span></p>
+          
+          <p><label for="password">Повторите</label>
+            <input type="password" name="password"><span></span></p>
+          
+          <p class="captcha"><label for="captcha">Введите число с картинки</label><span></span><br>
+          <img src="http://www.delo-bg63.ru/assets/tpl/img/captcha.jpg" alt="captcha"> 
+            <input type="text" name="captcha" pattern="6345262"><span></span>
+          </p>
+        </section>
+        
+        <section class="container two">
+        <button type="submit">Зарегистрироваться</button>
+        </section>
+      </form>
+      
+  </body>
+</html>
