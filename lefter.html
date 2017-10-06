@@ -1,8 +1,39 @@
-<p align="center"><font size=+1>Основное меню сайта</font></p>
-<p><a href="center.html" target="content">Главная</a></p>
-<p>Пункт меню <a href="number_1.html" target="content">Чатик</a></p>
-<p>Пункт меню <a href="number_2.html" target="content">Новости</a></p>
-<p>Пункт меню <a href="number_3.html" target="content">мемасики</a></p>
-<p>Пункт меню <a href="number_4.html" target="content">видосики</a></p>
-<p>Пункт меню <a href="7.html" target="content">комментарии</a></p>
-<p>Пункт меню <a href="http://nwik2.mybb.ru/">форум</a></p>
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="http://master-css.com/favicon.png">
+    <title>Выпдающее меню на CSS3</title>
+  <style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
+  <body>
+    
+    
+    <div class="side">
+      <ul class="menu">
+        <li><a href="center.html" target="content">Главная</li></a>
+        <li><a href="number_1.html" target="content">Чатик</li></a>
+        <li><a href="number_2.html" target="content">Новости</li></a>
+        <li class="menu__list"><a href="number_3.html" target="content">Мемасики</a>
+          <ul class="menu__drop">
+            <li><a href="#">Про школу</a></li>
+            <li><a href="#">Исторические мемы</a></li>
+            <li><a href="#">Мемы для даунов</a></li>
+            <li><a href="#">Аниме мемы</a></li>
+            <li><a href="#">Разное</a></li>
+          </ul>
+        </li>
+        <li><a href="7.html" target="content">Комментарии</a></li>
+        <li class="menu__list"><a href="number_4.html" target="content">видосики</a>
+          <ul class="menu__drop">
+            <li><a href="#">Аниме</a></li>
+            <li><a href="#">Приколы</a></li>
+            <li><a href="#">Блоггеры</a></li>
+            <li><a href="#">Летсплеи</a></li>
+            <li><a href="#">Киберспорт</a></li>
+          </ul>
+        </li>
+        <li><a href="http://nwik2.mybb.ru/" target="content">Форум</a></li>
+      </ul>
+    </div>
+    
+  
+</body></html>
